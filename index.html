@@ -1,1177 +1,229 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>CanKuvelet</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Can Kuvelet — Data Analyst & Industrial Engineer</title>
+    <meta name="description" content="Data analyst and industrial engineer building decision systems across supply chain, pricing, inventory, and forecasting." />
+    <link rel="canonical" href="https://kuvelet.github.io/portfolio/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kuvelet.github.io/portfolio/" />
+    <meta property="og:title" content="Can Kuvelet — Data Analyst & Industrial Engineer" />
+    <meta property="og:description" content="Data analyst and industrial engineer building decision systems across supply chain, pricing, inventory, and forecasting." />
+    <meta property="og:image" content="https://can-kuvelet-portfolio.cankuvelet.chatgpt.site/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Can Kuvelet — Data Analyst & Industrial Engineer" />
+    <meta name="twitter:description" content="Data analyst and industrial engineer building decision systems across supply chain, pricing, inventory, and forecasting." />
+    <meta name="twitter:image" content="https://can-kuvelet-portfolio.cankuvelet.chatgpt.site/og.png" />
+    <meta name="theme-color" content="#111711" />
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
+  <body><main>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a class="brand" href="#top" aria-label="Can Kuvelet — home">
+      <span>CK</span>
+      <strong>Can Kuvelet</strong>
+    </a>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#about">About</a>
+      <a class="nav-cta" href="mailto:cankuvelet@gmail.com">Let&rsquo;s talk</a>
+    </div>
+  </nav>
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<img src="images/can_avatar.jpeg" alt="" class="image avatar" />
-					<h1><strong>Can Kuvelet</strong></h1>
-					<h1>Results-driven Data Analyst with a strong Industrial Engineering background and expertise in SQL, PowerBI, and Python.</h1>
-				</div>
-			</header>
-			
+  <section class="hero" id="top">
+    <div class="hero-copy">
+      <p class="eyebrow"><span></span> Data analyst · Industrial engineer</p>
+      <h1>Turning operational noise into <em>clear decisions.</em></h1>
+      <p class="hero-intro">
+        I build analytical systems that make complex supply chains, pricing,
+        inventory, and forecasting easier to understand—and act on.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="#work">Explore selected work <span aria-hidden="true">↘</span></a>
+        <a class="text-link" href="https://github.com/Kuvelet" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
 
-		<!-- Main -->
-			<div id="main">
-				<!-- Two -->
-					<section id="two">
-						<h2 style="font-weight: bold;">Portfolio</h2>
-						<div class="row">
+    <div class="hero-visual" aria-label="Portrait of Can Kuvelet">
+      <div class="portrait-frame">
+        <img src="images/can_avatar.jpeg" alt="Can Kuvelet" width="1080" height="1080" />
+      </div>
+      <div class="metric-card metric-one"><strong>12K+</strong><span>SKUs forecasted</span></div>
+      <div class="metric-card metric-two"><strong>09</strong><span>featured systems</span></div>
+      <div class="orbit orbit-one"></div>
+      <div class="orbit orbit-two"></div>
+    </div>
+  </section>
 
-							
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/Kuvelet/SQL_AutoParts_Catalog_Management" class="image-wrapper">
-									<img src="images/ACES&PIES_Catalog_SQL.png" alt="Project Image" class="image fit thumb"/>
-									<div class="overlay">View Project</div>
-								</a>
-								<div class="content">
-									<h3 class="headline">
-										<a href="https://github.com/Kuvelet/SQL_AutoParts_Catalog_Management">SQL-Based ACES/PIES Catalog Management System</a>
-									</h3>
-									<p>A fully automated, SQL-based system that transforms raw ACES/PIES and company-specific data into a structured, up-to-date aftermarket auto parts catalog—integrating application fitment and cross-reference information for efficient use in both internal operations and external distribution.</p>
-								</div>
-							</article>
-							
-							<style>
-								/* Wrapper for the image */
-								.image-wrapper {
-									position: relative;
-									display: block;
-									overflow: hidden;
-									border: none;
-									outline: none;
-									margin-bottom: 0; /* Remove any space below the image */
-								}
-							
-								/* Ensure image is full width and has no extra spacing */
-								.image-wrapper img {
-									display: block;
-									width: 100%;
-									height: auto;
-									border: none;
-									margin-bottom: 0; /* Prevents any unnecessary space */
-								}
-							
-								/* Overlay for "View Project" */
-								.overlay {
-									position: absolute;
-									top: 45%; /* Moves it slightly upwards */
-									left: 50%;
-									transform: translate(-50%, -50%);
-									background: rgba(0, 0, 0, 0.7);
-									color: white;
-									padding: 10px 20px;
-									font-size: 16px;
-									font-weight: bold;
-									opacity: 0;
-									transition: opacity 0.3s ease-in-out;
-									text-align: center;
-									border-radius: 5px;
-								}
-							
-								/* Show overlay on hover */
-								.image-wrapper:hover .overlay {
-									opacity: 1;
-								}
-							
-								/* Ensure headline is as close as possible to the image */
-								.content {
-									margin-top: -5px !important; /* Moves the text up */
-									padding-top: 0 !important;
-								}
-							
-								.headline {
-									margin-top: 0 !important; /* Removes any top margin */
-									padding-top: 0 !important; /* Removes any extra spacing */
-									line-height: 1.2; /* Reduces line spacing slightly */
-								}
-							
-								/* Style for clickable headline */
-								.headline a {
-									text-decoration: none; /* Remove underline */
-									border-bottom: none; /* Remove any bottom border */
-									color: inherit; /* Keeps the same text color */
-									transition: color 0.3s ease-in-out;
-									display: inline-block;
-								}
-							
-								.headline a:hover {
-									color: #007bff; /* Change color on hover */
-								}
-							
-								/* Keep space between articles */
-								.work-item {
-									margin-bottom: 30px; /* Maintain spacing between articles */
-								}
-							</style>
+  <section class="signal-strip" aria-label="Core skills">
+    <div class="signal-track">
+      <span>SQL</span><i>•</i><span>Power BI</span><i>•</i><span>Python</span><i>•</i><span>DAX &amp; M</span><i>•</i><span>Forecasting</span><i>•</i><span>Data modeling</span>
+    </div>
+  </section>
 
+  <section class="work-section" id="work">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow"><span></span> Selected work</p>
+        <h2>Systems built for real operational decisions.</h2>
+      </div>
+      <p class="section-note">A selection of end-to-end analytics projects spanning automotive data, commercial intelligence, and supply-chain operations.</p>
+    </div>
 
+    <div class="project-grid">
+      <article class="project-card project-featured">
+        <a class="project-image" href="https://github.com/Kuvelet/SQL_AutoParts_Catalog_Management" target="_blank" rel="noreferrer" aria-label="View SQL-Based ACES and PIES Catalog Management System on GitHub">
+          <img src="images/ACES%26PIES_Catalog_SQL.png" alt="ACES and PIES catalog data flowing into an SQL system" width="1600" height="900" />
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </a>
+        <div class="project-copy">
+          <div class="project-meta"><span>01</span><span>SQL · Data architecture</span></div>
+          <h3><a href="https://github.com/Kuvelet/SQL_AutoParts_Catalog_Management" target="_blank" rel="noreferrer">ACES/PIES Catalog Management System</a></h3>
+          <p>An automated data pipeline that transforms raw industry and company data into a structured aftermarket catalog with fitment and cross-reference intelligence.</p>
+        </div>
+      </article>
 
+      <article class="project-card project-featured">
+        <a class="project-image dark-image" href="https://github.com/Kuvelet/Unified_Business_Semantic_Model" target="_blank" rel="noreferrer" aria-label="View Unified Power BI Semantic Model on GitHub">
+          <img src="images/powerbi_semantic.jpg" alt="Power BI semantic model diagram" width="1736" height="974" />
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </a>
+        <div class="project-copy">
+          <div class="project-meta"><span>02</span><span>Power BI · DAX · M</span></div>
+          <h3><a href="https://github.com/Kuvelet/Unified_Business_Semantic_Model" target="_blank" rel="noreferrer">Unified Business Semantic Model</a></h3>
+          <p>A governed analytics layer unifying sales, procurement, and finance data for consistent reporting and faster cross-functional decisions.</p>
+        </div>
+      </article>
 
-							
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/Kuvelet/Unified_Business_Semantic_Model" class="image-wrapper">
-									<img src="images/powerbi_semantic.jpg" alt="Project Image" class="image fit thumb"/>
-									<div class="overlay">View Project</div>
-								</a>
-								<div class="content">
-									<h3 class="headline">
-										<a href="https://github.com/Kuvelet/Unified_Business_Semantic_Model">Unified Power BI Semantic Model: Advanced Business Analytics with DAX & M</a>
-									</h3>
-									<p>A comprehensive Power BI semantic model designed to unify and enrich business and transactional data, enabling advanced analytics, interactive visualizations, and data-driven decision making across sales, procurement, and financial domains.</p>
-								</div>
-							</article>
-							
-							<style>
-								/* Wrapper for the image */
-								.image-wrapper {
-									position: relative;
-									display: block;
-									overflow: hidden;
-									border: none;
-									outline: none;
-									margin-bottom: 0; /* Remove any space below the image */
-								}
-							
-								/* Ensure image is full width and has no extra spacing */
-								.image-wrapper img {
-									display: block;
-									width: 100%;
-									height: auto;
-									border: none;
-									margin-bottom: 0; /* Prevents any unnecessary space */
-								}
-							
-								/* Overlay for "View Project" */
-								.overlay {
-									position: absolute;
-									top: 45%; /* Moves it slightly upwards */
-									left: 50%;
-									transform: translate(-50%, -50%);
-									background: rgba(0, 0, 0, 0.7);
-									color: white;
-									padding: 10px 20px;
-									font-size: 16px;
-									font-weight: bold;
-									opacity: 0;
-									transition: opacity 0.3s ease-in-out;
-									text-align: center;
-									border-radius: 5px;
-								}
-							
-								/* Show overlay on hover */
-								.image-wrapper:hover .overlay {
-									opacity: 1;
-								}
-							
-								/* Ensure headline is as close as possible to the image */
-								.content {
-									margin-top: -5px !important; /* Moves the text up */
-									padding-top: 0 !important;
-								}
-							
-								.headline {
-									margin-top: 0 !important; /* Removes any top margin */
-									padding-top: 0 !important; /* Removes any extra spacing */
-									line-height: 1.2; /* Reduces line spacing slightly */
-								}
-							
-								/* Style for clickable headline */
-								.headline a {
-									text-decoration: none; /* Remove underline */
-									border-bottom: none; /* Remove any bottom border */
-									color: inherit; /* Keeps the same text color */
-									transition: color 0.3s ease-in-out;
-									display: inline-block;
-								}
-							
-								.headline a:hover {
-									color: #007bff; /* Change color on hover */
-								}
-							
-								/* Keep space between articles */
-								.work-item {
-									margin-bottom: 30px; /* Maintain spacing between articles */
-								}
-							</style>
+      <article class="project-card">
+        <a class="project-image" href="https://github.com/Kuvelet/Forecast_Python_ARIMA_Prophet_ChassisParts" target="_blank" rel="noreferrer" aria-label="View Python forecasting engine on GitHub">
+          <img src="images/Forecast_Python_ARIMA_Prophet.png" alt="Forecasting workflow using ARIMA and Prophet" loading="lazy" width="1600" height="900" />
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </a>
+        <div class="project-copy">
+          <div class="project-meta"><span>03</span><span>Python · Forecasting</span></div>
+          <h3><a href="https://github.com/Kuvelet/Forecast_Python_ARIMA_Prophet_ChassisParts" target="_blank" rel="noreferrer">SKU Demand Forecasting Engine</a></h3>
+          <p>ARIMA and Prophet forecasting across 12,000+ chassis SKUs to support procurement and inventory planning.</p>
+        </div>
+      </article>
 
+      <article class="project-card">
+        <a class="project-image" href="https://github.com/Kuvelet/SQL_Purchasing_Optimization" target="_blank" rel="noreferrer" aria-label="View SQL purchasing optimization project on GitHub">
+          <img src="images/purchasing_optimization_sql.png" alt="SQL purchasing optimization concept" loading="lazy" width="1600" height="900" />
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </a>
+        <div class="project-copy">
+          <div class="project-meta"><span>04</span><span>SQL · Procurement</span></div>
+          <h3><a href="https://github.com/Kuvelet/SQL_Purchasing_Optimization" target="_blank" rel="noreferrer">Purchasing Optimization</a></h3>
+          <p>Dynamic landed-cost analysis and vendor comparison logic built for scalable, cost-conscious purchasing decisions.</p>
+        </div>
+      </article>
 
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/Kuvelet/SQL_Purchasing_Optimization" class="image-wrapper">
-									<img src="images/purchasing_optimization_sql.png" alt="Project Image" class="image fit thumb"/>
-									<div class="overlay">View Project</div>
-								</a>
-								<div class="content">
-									<h3 class="headline">
-										<a href="https://github.com/Kuvelet/SQL_Purchasing_Optimization">SQL Approach to Purchasing Optimization</a>
-									</h3>
-									<p>This project establishes a scalable, data-driven approach to optimize purchasing by utilizing SQL for advanced cost analysis and dynamic LDP calculations, ensuring efficient, cost-effective, and real-time decision-making across multiple vendors.</p>
-								</div>
-							</article>
-							
-							<style>
-								/* Wrapper for the image */
-								.image-wrapper {
-									position: relative;
-									display: block;
-									overflow: hidden;
-									border: none;
-									outline: none;
-									margin-bottom: 0; /* Remove any space below the image */
-								}
-							
-								/* Ensure image is full width and has no extra spacing */
-								.image-wrapper img {
-									display: block;
-									width: 100%;
-									height: auto;
-									border: none;
-									margin-bottom: 0; /* Prevents any unnecessary space */
-								}
-							
-								/* Overlay for "View Project" */
-								.overlay {
-									position: absolute;
-									top: 45%; /* Moves it slightly upwards */
-									left: 50%;
-									transform: translate(-50%, -50%);
-									background: rgba(0, 0, 0, 0.7);
-									color: white;
-									padding: 10px 20px;
-									font-size: 16px;
-									font-weight: bold;
-									opacity: 0;
-									transition: opacity 0.3s ease-in-out;
-									text-align: center;
-									border-radius: 5px;
-								}
-							
-								/* Show overlay on hover */
-								.image-wrapper:hover .overlay {
-									opacity: 1;
-								}
-							
-								/* Ensure headline is as close as possible to the image */
-								.content {
-									margin-top: -5px !important; /* Moves the text up */
-									padding-top: 0 !important;
-								}
-							
-								.headline {
-									margin-top: 0 !important; /* Removes any top margin */
-									padding-top: 0 !important; /* Removes any extra spacing */
-									line-height: 1.2; /* Reduces line spacing slightly */
-								}
-							
-								/* Style for clickable headline */
-								.headline a {
-									text-decoration: none; /* Remove underline */
-									border-bottom: none; /* Remove any bottom border */
-									color: inherit; /* Keeps the same text color */
-									transition: color 0.3s ease-in-out;
-									display: inline-block;
-								}
-							
-								.headline a:hover {
-									color: #007bff; /* Change color on hover */
-								}
-							
-								/* Keep space between articles */
-								.work-item {
-									margin-bottom: 30px; /* Maintain spacing between articles */
-								}
-							</style>
+      <article class="project-card">
+        <a class="project-image" href="https://github.com/Kuvelet/SQL_Benchmark_ChassisSales" target="_blank" rel="noreferrer" aria-label="View SQL market benchmarking project on GitHub">
+          <img src="images/regional_sales_benchmarking.png" alt="Regional sales market benchmarking dashboard" loading="lazy" width="1600" height="900" />
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </a>
+        <div class="project-copy">
+          <div class="project-meta"><span>05</span><span>SQL · Market intelligence</span></div>
+          <h3><a href="https://github.com/Kuvelet/SQL_Benchmark_ChassisSales" target="_blank" rel="noreferrer">Regional Sales Benchmarking</a></h3>
+          <p>Market-demand comparison that surfaces sales gaps, catalog coverage opportunities, and regional growth potential.</p>
+        </div>
+      </article>
 
+      <article class="project-card">
+        <a class="project-image" href="https://github.com/Kuvelet/Pricing_ChassisParts" target="_blank" rel="noreferrer" aria-label="View smart pricing project on GitHub">
+          <img src="images/smart_pricing.jpeg" alt="Smart pricing analytics concept" loading="lazy" width="1600" height="900" />
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </a>
+        <div class="project-copy">
+          <div class="project-meta"><span>06</span><span>Python · Pricing</span></div>
+          <h3><a href="https://github.com/Kuvelet/Pricing_ChassisParts" target="_blank" rel="noreferrer">Smart Pricing Engine</a></h3>
+          <p>Regression and competitor benchmarking applied across thousands of SKUs to improve pricing while protecting margin.</p>
+        </div>
+      </article>
 
+      <article class="project-card compact-card">
+        <a class="project-image" href="https://github.com/Kuvelet/MSAccess_Inv_Reconciliation" target="_blank" rel="noreferrer" aria-label="View inventory reconciliation project on GitHub">
+          <img src="images/reconciliation.png" alt="Inventory reconciliation analysis" loading="lazy" width="1600" height="900" />
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </a>
+        <div class="project-copy">
+          <div class="project-meta"><span>07</span><span>MS Access · Finance</span></div>
+          <h3><a href="https://github.com/Kuvelet/MSAccess_Inv_Reconciliation" target="_blank" rel="noreferrer">Inventory Reconciliation</a></h3>
+          <p>Accounting-to-WMS discrepancy analysis with quantified financial impact.</p>
+        </div>
+      </article>
 
+      <article class="project-card compact-card">
+        <a class="project-image" href="https://github.com/Kuvelet/M_Language_Inv_DeValuation" target="_blank" rel="noreferrer" aria-label="View inventory devaluation project on GitHub">
+          <img src="images/inv_dev_m.webp" alt="Inventory devaluation workflow" loading="lazy" width="1600" height="900" />
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </a>
+        <div class="project-copy">
+          <div class="project-meta"><span>08</span><span>M · Inventory</span></div>
+          <h3><a href="https://github.com/Kuvelet/M_Language_Inv_DeValuation" target="_blank" rel="noreferrer">Inventory Devaluation</a></h3>
+          <p>Customer inventory loss modeling connected to company sales performance.</p>
+        </div>
+      </article>
 
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/Kuvelet/Forecast_Python_ARIMA_Prophet_ChassisParts" class="image-wrapper">
-									<img src="images/Forecast_Python_ARIMA_Prophet.png" alt="Project Image" class="image fit thumb"/>
-									<div class="overlay">View Project</div>
-								</a>
-								<div class="content">
-									<h3 class="headline">
-										<a href="https://github.com/Kuvelet/Forecast_Python_ARIMA_Prophet_ChassisParts">Python-Based Forecasting Engine for Automotive Chassis SKU Demand with ARIMA and Prophet</a>
-									</h3>
-									<p>Built an end-to-end SKU-level demand forecasting system in Python using Jupyter Notebooks, leveraging Prophet and ARIMA models to predict monthly sales for 12,000+ automotive chassis parts—enabling data-driven procurement decisions and improving inventory efficiency across the supply chain.</p>
-								</div>
-							</article>
-							
-							<style>
-								/* Wrapper for the image */
-								.image-wrapper {
-									position: relative;
-									display: block;
-									overflow: hidden;
-									border: none;
-									outline: none;
-									margin-bottom: 0; /* Remove any space below the image */
-								}
-							
-								/* Ensure image is full width and has no extra spacing */
-								.image-wrapper img {
-									display: block;
-									width: 100%;
-									height: auto;
-									border: none;
-									margin-bottom: 0; /* Prevents any unnecessary space */
-								}
-							
-								/* Overlay for "View Project" */
-								.overlay {
-									position: absolute;
-									top: 45%; /* Moves it slightly upwards */
-									left: 50%;
-									transform: translate(-50%, -50%);
-									background: rgba(0, 0, 0, 0.7);
-									color: white;
-									padding: 10px 20px;
-									font-size: 16px;
-									font-weight: bold;
-									opacity: 0;
-									transition: opacity 0.3s ease-in-out;
-									text-align: center;
-									border-radius: 5px;
-								}
-							
-								/* Show overlay on hover */
-								.image-wrapper:hover .overlay {
-									opacity: 1;
-								}
-							
-								/* Ensure headline is as close as possible to the image */
-								.content {
-									margin-top: -5px !important; /* Moves the text up */
-									padding-top: 0 !important;
-								}
-							
-								.headline {
-									margin-top: 0 !important; /* Removes any top margin */
-									padding-top: 0 !important; /* Removes any extra spacing */
-									line-height: 1.2; /* Reduces line spacing slightly */
-								}
-							
-								/* Style for clickable headline */
-								.headline a {
-									text-decoration: none; /* Remove underline */
-									border-bottom: none; /* Remove any bottom border */
-									color: inherit; /* Keeps the same text color */
-									transition: color 0.3s ease-in-out;
-									display: inline-block;
-								}
-							
-								.headline a:hover {
-									color: #007bff; /* Change color on hover */
-								}
-							
-								/* Keep space between articles */
-								.work-item {
-									margin-bottom: 30px; /* Maintain spacing between articles */
-								}
-							</style>
+      <article class="project-card compact-card">
+        <a class="project-image" href="https://github.com/Kuvelet/SQL_Auto_Master_Cross" target="_blank" rel="noreferrer" aria-label="View automotive master cross project on GitHub">
+          <img src="images/sql_cross_master.png" alt="Automotive SQL master cross data model" loading="lazy" width="1600" height="900" />
+          <span class="project-arrow" aria-hidden="true">↗</span>
+        </a>
+        <div class="project-copy">
+          <div class="project-meta"><span>09</span><span>SQL · Data quality</span></div>
+          <h3><a href="https://github.com/Kuvelet/SQL_Auto_Master_Cross" target="_blank" rel="noreferrer">Automotive Master Cross</a></h3>
+          <p>Structured part-number relationships for cleaner RFQs and catalog maintenance.</p>
+        </div>
+      </article>
+    </div>
+  </section>
 
+  <section class="capabilities-section" id="capabilities">
+    <div class="section-heading inverted">
+      <div>
+        <p class="eyebrow"><span></span> What I bring</p>
+        <h2>Analysis that holds up in the real world.</h2>
+      </div>
+      <p class="section-note">From raw operational data to a decision-ready model, I focus on the full chain—not just the final chart.</p>
+    </div>
+    <div class="capability-list">
+      <article><span>01</span><h3>Data architecture</h3><p>SQL systems, data transformation, semantic models, and durable analytical foundations.</p></article>
+      <article><span>02</span><h3>Decision intelligence</h3><p>Power BI, DAX, and business logic that translate metrics into a shared operating language.</p></article>
+      <article><span>03</span><h3>Forecasting &amp; optimization</h3><p>Python models that make demand, cost, pricing, and purchasing decisions more forward-looking.</p></article>
+      <article><span>04</span><h3>Operational context</h3><p>Industrial engineering thinking grounded in supply chain, automotive aftermarket, and finance.</p></article>
+    </div>
+  </section>
 
-							
+  <section class="about-section" id="about">
+    <div class="about-photo">
+      <img src="images/can_avatar.jpeg" alt="Portrait of Can Kuvelet" loading="lazy" width="1080" height="1080" />
+      <span class="photo-tag">Industrial engineering × analytics</span>
+    </div>
+    <div class="about-copy">
+      <p class="eyebrow"><span></span> About</p>
+      <h2>I care about the space between a technically correct answer and a useful one.</h2>
+      <p>My background in industrial engineering shapes how I approach analytics: understand the operation, structure the problem, then build the clearest possible path from data to action.</p>
+      <p>I work across SQL, Power BI, Python, DAX, M, and Access—often where supply chain, pricing, inventory, and commercial decisions overlap.</p>
+      <div class="tool-row" aria-label="Tools and disciplines">
+        <span>SQL</span><span>Power BI</span><span>Python</span><span>DAX</span><span>M</span><span>MS Access</span>
+      </div>
+      <a class="button outline" href="https://www.linkedin.com/in/cankuvelet/" target="_blank" rel="noreferrer">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
 
-
-
-
-							
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/Kuvelet/MSAccess_Inv_Reconciliation" class="image-wrapper">
-									<img src="images/reconciliation.png" alt="Project Image" class="image fit thumb"/>
-									<div class="overlay">View Project</div>
-								</a>
-								<div class="content">
-									<h3 class="headline">
-										<a href="https://github.com/Kuvelet/MSAccess_Inv_Reconciliation">Inventory Reconciliation and Financial Impact Analysis using MS Access</a>
-									</h3>
-									<p>This project focuses on performing a comprehensive inventory reconciliation between Accounting Data and WMS, identifying discrepancies, analyzing their financial impact, and providing insights to enhance inventory accuracy and operational efficiency.</p>
-								</div>
-							</article>
-							
-							<style>
-								/* Wrapper for the image */
-								.image-wrapper {
-									position: relative;
-									display: block;
-									overflow: hidden;
-									border: none;
-									outline: none;
-									margin-bottom: 0; /* Remove any space below the image */
-								}
-							
-								/* Ensure image is full width and has no extra spacing */
-								.image-wrapper img {
-									display: block;
-									width: 100%;
-									height: auto;
-									border: none;
-									margin-bottom: 0; /* Prevents any unnecessary space */
-								}
-							
-								/* Overlay for "View Project" */
-								.overlay {
-									position: absolute;
-									top: 45%; /* Moves it slightly upwards */
-									left: 50%;
-									transform: translate(-50%, -50%);
-									background: rgba(0, 0, 0, 0.7);
-									color: white;
-									padding: 10px 20px;
-									font-size: 16px;
-									font-weight: bold;
-									opacity: 0;
-									transition: opacity 0.3s ease-in-out;
-									text-align: center;
-									border-radius: 5px;
-								}
-							
-								/* Show overlay on hover */
-								.image-wrapper:hover .overlay {
-									opacity: 1;
-								}
-							
-								/* Ensure headline is as close as possible to the image */
-								.content {
-									margin-top: -5px !important; /* Moves the text up */
-									padding-top: 0 !important;
-								}
-							
-								.headline {
-									margin-top: 0 !important; /* Removes any top margin */
-									padding-top: 0 !important; /* Removes any extra spacing */
-									line-height: 1.2; /* Reduces line spacing slightly */
-								}
-							
-								/* Style for clickable headline */
-								.headline a {
-									text-decoration: none; /* Remove underline */
-									border-bottom: none; /* Remove any bottom border */
-									color: inherit; /* Keeps the same text color */
-									transition: color 0.3s ease-in-out;
-									display: inline-block;
-								}
-							
-								.headline a:hover {
-									color: #007bff; /* Change color on hover */
-								}
-							
-								/* Keep space between articles */
-								.work-item {
-									margin-bottom: 30px; /* Maintain spacing between articles */
-								}
-							</style>
-
-	
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/Kuvelet/SQL_Benchmark_ChassisSales" class="image-wrapper">
-									<img src="images/regional_sales_benchmarking.png" alt="Project Image" class="image fit thumb"/>
-									<div class="overlay">View Project</div>
-								</a>
-								<div class="content">
-									<h3 class="headline">
-										<a href="https://github.com/Kuvelet/SQL_Benchmark_ChassisSales">Benchmarking Auto Parts Sales with SQL-Based Market Comparison</a>
-									</h3>
-									<p>This project leverages SQL-based data transformation and regional aggregation to benchmark internal auto parts sales against external market demand, enabling strategic insights into performance gaps, catalog coverage, and growth opportunities.</p>
-								</div>
-							</article>
-							
-							<style>
-								/* Wrapper for the image */
-								.image-wrapper {
-									position: relative;
-									display: block;
-									overflow: hidden;
-									border: none;
-									outline: none;
-									margin-bottom: 0; /* Remove any space below the image */
-								}
-							
-								/* Ensure image is full width and has no extra spacing */
-								.image-wrapper img {
-									display: block;
-									width: 100%;
-									height: auto;
-									border: none;
-									margin-bottom: 0; /* Prevents any unnecessary space */
-								}
-							
-								/* Overlay for "View Project" */
-								.overlay {
-									position: absolute;
-									top: 45%; /* Moves it slightly upwards */
-									left: 50%;
-									transform: translate(-50%, -50%);
-									background: rgba(0, 0, 0, 0.7);
-									color: white;
-									padding: 10px 20px;
-									font-size: 16px;
-									font-weight: bold;
-									opacity: 0;
-									transition: opacity 0.3s ease-in-out;
-									text-align: center;
-									border-radius: 5px;
-								}
-							
-								/* Show overlay on hover */
-								.image-wrapper:hover .overlay {
-									opacity: 1;
-								}
-							
-								/* Ensure headline is as close as possible to the image */
-								.content {
-									margin-top: -5px !important; /* Moves the text up */
-									padding-top: 0 !important;
-								}
-							
-								.headline {
-									margin-top: 0 !important; /* Removes any top margin */
-									padding-top: 0 !important; /* Removes any extra spacing */
-									line-height: 1.2; /* Reduces line spacing slightly */
-								}
-							
-								/* Style for clickable headline */
-								.headline a {
-									text-decoration: none; /* Remove underline */
-									border-bottom: none; /* Remove any bottom border */
-									color: inherit; /* Keeps the same text color */
-									transition: color 0.3s ease-in-out;
-									display: inline-block;
-								}
-							
-								.headline a:hover {
-									color: #007bff; /* Change color on hover */
-								}
-							
-								/* Keep space between articles */
-								.work-item {
-									margin-bottom: 30px; /* Maintain spacing between articles */
-								}
-							</style>
-
-
-
-
-							
-
-
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/Kuvelet/Pricing_ChassisParts" class="image-wrapper">
-									<img src="images/smart_pricing.jpeg" alt="Project Image" class="image fit thumb"/>
-									<div class="overlay">View Project</div>
-								</a>
-								<div class="content">
-									<h3 class="headline">
-										<a href="https://github.com/Kuvelet/Pricing_ChassisParts">Smart Pricing in the Chassis Parts Market</a>
-									</h3>
-									<p>This project builds a data-driven pricing engine that uses regression analysis and competitor benchmarking to optimize wholesale prices across thousands of SKUs while protecting profit margins.</p>
-								</div>
-							</article>
-							
-							<style>
-								/* Wrapper for the image */
-								.image-wrapper {
-									position: relative;
-									display: block;
-									overflow: hidden;
-									border: none;
-									outline: none;
-									margin-bottom: 0; /* Remove any space below the image */
-								}
-							
-								/* Ensure image is full width and has no extra spacing */
-								.image-wrapper img {
-									display: block;
-									width: 100%;
-									height: auto;
-									border: none;
-									margin-bottom: 0; /* Prevents any unnecessary space */
-								}
-							
-								/* Overlay for "View Project" */
-								.overlay {
-									position: absolute;
-									top: 45%; /* Moves it slightly upwards */
-									left: 50%;
-									transform: translate(-50%, -50%);
-									background: rgba(0, 0, 0, 0.7);
-									color: white;
-									padding: 10px 20px;
-									font-size: 16px;
-									font-weight: bold;
-									opacity: 0;
-									transition: opacity 0.3s ease-in-out;
-									text-align: center;
-									border-radius: 5px;
-								}
-							
-								/* Show overlay on hover */
-								.image-wrapper:hover .overlay {
-									opacity: 1;
-								}
-							
-								/* Ensure headline is as close as possible to the image */
-								.content {
-									margin-top: -5px !important; /* Moves the text up */
-									padding-top: 0 !important;
-								}
-							
-								.headline {
-									margin-top: 0 !important; /* Removes any top margin */
-									padding-top: 0 !important; /* Removes any extra spacing */
-									line-height: 1.2; /* Reduces line spacing slightly */
-								}
-							
-								/* Style for clickable headline */
-								.headline a {
-									text-decoration: none; /* Remove underline */
-									border-bottom: none; /* Remove any bottom border */
-									color: inherit; /* Keeps the same text color */
-									transition: color 0.3s ease-in-out;
-									display: inline-block;
-								}
-							
-								.headline a:hover {
-									color: #007bff; /* Change color on hover */
-								}
-							
-								/* Keep space between articles */
-								.work-item {
-									margin-bottom: 30px; /* Maintain spacing between articles */
-								}
-							</style>
-
-
-							
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/Kuvelet/M_Language_Inv_DeValuation" class="image-wrapper">
-									<img src="images/inv_dev_m.webp" alt="Project Image" class="image fit thumb"/>
-									<div class="overlay">View Project</div>
-								</a>
-								<div class="content">
-									<h3 class="headline">
-										<a href="https://github.com/Kuvelet/M_Language_Inv_DeValuation">M Language Approach to Inventory Devaluation</a>
-									</h3>
-									<p>This project evaluates the financial impact of a price reduction on auto parts by analyzing customer inventory data, quantifying losses using M language, and comparing devaluation with company sales data for a comprehensive assessment.</p>
-								</div>
-							</article>
-							
-							<style>
-								/* Wrapper for the image */
-								.image-wrapper {
-									position: relative;
-									display: block;
-									overflow: hidden;
-									border: none;
-									outline: none;
-									margin-bottom: 0; /* Remove any space below the image */
-								}
-							
-								/* Ensure image is full width and has no extra spacing */
-								.image-wrapper img {
-									display: block;
-									width: 100%;
-									height: auto;
-									border: none;
-									margin-bottom: 0; /* Prevents any unnecessary space */
-								}
-							
-								/* Overlay for "View Project" */
-								.overlay {
-									position: absolute;
-									top: 45%; /* Moves it slightly upwards */
-									left: 50%;
-									transform: translate(-50%, -50%);
-									background: rgba(0, 0, 0, 0.7);
-									color: white;
-									padding: 10px 20px;
-									font-size: 16px;
-									font-weight: bold;
-									opacity: 0;
-									transition: opacity 0.3s ease-in-out;
-									text-align: center;
-									border-radius: 5px;
-								}
-							
-								/* Show overlay on hover */
-								.image-wrapper:hover .overlay {
-									opacity: 1;
-								}
-							
-								/* Ensure headline is as close as possible to the image */
-								.content {
-									margin-top: -5px !important; /* Moves the text up */
-									padding-top: 0 !important;
-								}
-							
-								.headline {
-									margin-top: 0 !important; /* Removes any top margin */
-									padding-top: 0 !important; /* Removes any extra spacing */
-									line-height: 1.2; /* Reduces line spacing slightly */
-								}
-							
-								/* Style for clickable headline */
-								.headline a {
-									text-decoration: none; /* Remove underline */
-									border-bottom: none; /* Remove any bottom border */
-									color: inherit; /* Keeps the same text color */
-									transition: color 0.3s ease-in-out;
-									display: inline-block;
-								}
-							
-								.headline a:hover {
-									color: #007bff; /* Change color on hover */
-								}
-							
-								/* Keep space between articles */
-								.work-item {
-									margin-bottom: 30px; /* Maintain spacing between articles */
-								}
-							</style>
-
-
-
-
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="https://github.com/Kuvelet/SQL_Auto_Master_Cross" class="image-wrapper">
-									<img src="images/sql_cross_master.png" alt="Project Image" class="image fit thumb"/>
-									<div class="overlay">View Project</div>
-								</a>
-								<div class="content">
-									<h3 class="headline">
-										<a href="https://github.com/Kuvelet/SQL_Auto_Master_Cross">SQL Approach to Creating a Master Cross for Auto Industry</a>
-									</h3>
-									<p>This project focuses on restructuring cross-reference data for part numbers to enhance data organization, improve accuracy in handling RFQs, and streamline the process of adding or modifying part crosses.</p>
-								</div>
-							</article>
-							
-							<style>
-								/* Wrapper for the image */
-								.image-wrapper {
-									position: relative;
-									display: block;
-									overflow: hidden;
-									border: none;
-									outline: none;
-									margin-bottom: 0; /* Remove any space below the image */
-								}
-							
-								/* Ensure image is full width and has no extra spacing */
-								.image-wrapper img {
-									display: block;
-									width: 100%;
-									height: auto;
-									border: none;
-									margin-bottom: 0; /* Prevents any unnecessary space */
-								}
-							
-								/* Overlay for "View Project" */
-								.overlay {
-									position: absolute;
-									top: 45%; /* Moves it slightly upwards */
-									left: 50%;
-									transform: translate(-50%, -50%);
-									background: rgba(0, 0, 0, 0.7);
-									color: white;
-									padding: 10px 20px;
-									font-size: 16px;
-									font-weight: bold;
-									opacity: 0;
-									transition: opacity 0.3s ease-in-out;
-									text-align: center;
-									border-radius: 5px;
-								}
-							
-								/* Show overlay on hover */
-								.image-wrapper:hover .overlay {
-									opacity: 1;
-								}
-							
-								/* Ensure headline is as close as possible to the image */
-								.content {
-									margin-top: -5px !important; /* Moves the text up */
-									padding-top: 0 !important;
-								}
-							
-								.headline {
-									margin-top: 0 !important; /* Removes any top margin */
-									padding-top: 0 !important; /* Removes any extra spacing */
-									line-height: 1.2; /* Reduces line spacing slightly */
-								}
-							
-								/* Style for clickable headline */
-								.headline a {
-									text-decoration: none; /* Remove underline */
-									border-bottom: none; /* Remove any bottom border */
-									color: inherit; /* Keeps the same text color */
-									transition: color 0.3s ease-in-out;
-									display: inline-block;
-								}
-							
-								.headline a:hover {
-									color: #007bff; /* Change color on hover */
-								}
-							
-								/* Keep space between articles */
-								.work-item {
-									margin-bottom: 30px; /* Maintain spacing between articles */
-								}
-							</style>
-	
-						</div>
-					</section>
-				<!-- Four -->
-				<!--
-					<section id="four">
-						<h2>Elements</h2>
-
-						<section>
-							<h4>Text</h4>
-							<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-							This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-							This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-							<hr />
-							<header>
-								<h4>Heading with a Subtitle</h4>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<header>
-								<h5>Heading with a Subtitle</h5>
-								<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-							</header>
-							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-							<hr />
-							<h2>Heading Level 2</h2>
-							<h3>Heading Level 3</h3>
-							<h4>Heading Level 4</h4>
-							<h5>Heading Level 5</h5>
-							<h6>Heading Level 6</h6>
-							<hr />
-							<h5>Blockquote</h5>
-							<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-							<h5>Preformatted</h5>
-							<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-print 'Iteration ' + i;
-deck.shuffle();
-i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-						</section>
-
-						<section>
-							<h4>Lists</h4>
-							<div class="row">
-								<div class="col-6 col-12-xsmall">
-									<h5>Unordered</h5>
-									<ul>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-									<h5>Alternate</h5>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Sagittis adipiscing lorem eleifend.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-xsmall">
-									<h5>Ordered</h5>
-									<ol>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-										<li>Dolor pulvinar etiam magna etiam.</li>
-										<li>Etiam vel felis at lorem sed viverra.</li>
-										<li>Felis enim feugiat dolore viverra.</li>
-									</ol>
-									<h5>Icons</h5>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-										<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-									</ul>
-								</div>
-							</div>
-							<h5>Actions</h5>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Default</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions small">
-								<li><a href="#" class="button primary small">Small</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<div class="row">
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small">Small</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary fit">Default</a></li>
-										<li><a href="#" class="button fit">Default</a></li>
-									</ul>
-								</div>
-								<div class="col-6 col-12-small">
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary small fit">Small</a></li>
-										<li><a href="#" class="button small fit">Small</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-
-						<section>
-							<h4>Table</h4>
-							<h5>Default</h5>
-							<div class="table-wrapper">
-								<table>
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-
-							<h5>Alternate</h5>
-							<div class="table-wrapper">
-								<table class="alt">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Description</th>
-											<th>Price</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Item One</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Two</td>
-											<td>Vis ac commodo adipiscing arcu aliquet.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Three</td>
-											<td> Morbi faucibus arcu accumsan lorem.</td>
-											<td>29.99</td>
-										</tr>
-										<tr>
-											<td>Item Four</td>
-											<td>Vitae integer tempus condimentum.</td>
-											<td>19.99</td>
-										</tr>
-										<tr>
-											<td>Item Five</td>
-											<td>Ante turpis integer aliquet porttitor.</td>
-											<td>29.99</td>
-										</tr>
-									</tbody>
-									<tfoot>
-										<tr>
-											<td colspan="2"></td>
-											<td>100.00</td>
-										</tr>
-									</tfoot>
-								</table>
-							</div>
-						</section>
-
-						<section>
-							<h4>Buttons</h4>
-							<ul class="actions">
-								<li><a href="#" class="button primary">Primary</a></li>
-								<li><a href="#" class="button">Default</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button large">Large</a></li>
-								<li><a href="#" class="button">Default</a></li>
-								<li><a href="#" class="button small">Small</a></li>
-							</ul>
-							<ul class="actions fit">
-								<li><a href="#" class="button primary fit">Fit</a></li>
-								<li><a href="#" class="button fit">Fit</a></li>
-							</ul>
-							<ul class="actions fit small">
-								<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-								<li><a href="#" class="button fit small">Fit + Small</a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-								<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-							</ul>
-							<ul class="actions">
-								<li><span class="button primary disabled">Primary</span></li>
-								<li><span class="button disabled">Default</span></li>
-							</ul>
-						</section>
-
-						<section>
-							<h4>Form</h4>
-							<form method="post" action="#">
-								<div class="row gtr-uniform gtr-50">
-									<div class="col-6 col-12-xsmall">
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-xsmall">
-										<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<select name="demo-category" id="demo-category">
-											<option value="">- Category -</option>
-											<option value="1">Manufacturing</option>
-											<option value="1">Shipping</option>
-											<option value="1">Administration</option>
-											<option value="1">Human Resources</option>
-										</select>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-										<label for="demo-priority-low">Low Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-normal" name="demo-priority">
-										<label for="demo-priority-normal">Normal Priority</label>
-									</div>
-									<div class="col-4 col-12-small">
-										<input type="radio" id="demo-priority-high" name="demo-priority">
-										<label for="demo-priority-high">High Priority</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-copy" name="demo-copy">
-										<label for="demo-copy">Email me a copy of this message</label>
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="checkbox" id="demo-human" name="demo-human" checked>
-										<label for="demo-human">I am a human and not a robot</label>
-									</div>
-									<div class="col-12">
-										<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</section>
-
-						<section>
-							<h4>Image</h4>
-							<h5>Fit</h5>
-							<div class="box alt">
-								<div class="row gtr-50 gtr-uniform">
-									<div class="col-12"><span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span></div>
-								</div>
-							</div>
-							<h5>Left &amp; Right</h5>
-							<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-							<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-						</section>
-
-					</section>
-				-->
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li><a href="https://www.linkedin.com/in/cankuvelet/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://github.com/Kuvelet" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="mailto:cankuvelet@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-				</div>
-			</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+  <footer class="site-footer" id="contact">
+    <div class="footer-topline"><span>Have a complex data problem?</span><span>Let&rsquo;s make it clear.</span></div>
+    <a class="email-link" href="mailto:cankuvelet@gmail.com">can<span>@</span>kuvelet</a>
+    <div class="footer-bottom">
+      <p>Can Kuvelet · Data Analyst</p>
+      <div><a href="https://github.com/Kuvelet" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/cankuvelet/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="#top">Back to top ↑</a></div>
+      <p>© 2026</p>
+    </div>
+  </footer>
+</main></body>
 </html>
