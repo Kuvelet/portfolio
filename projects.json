@@ -1,0 +1,83 @@
+[
+  {
+    "title": "Automated Parts Catalog",
+    "category": "Data engineering",
+    "description": "Combines vehicle fitment and cross-reference data into a structured aftermarket catalog, with repeatable SQL workflows for Buyers Guide and Master Cross outputs.",
+    "tags": ["SQL Server", "ACES / PIES"],
+    "image": "images/ACES&PIES_Catalog_SQL.png",
+    "imageAlt": "Illustration of ACES and PIES data feeding a SQL-backed parts catalog",
+    "url": "https://github.com/Kuvelet/SQL_AutoParts_Catalog_Management"
+  },
+  {
+    "title": "Unified Business Reporting",
+    "category": "Business intelligence",
+    "description": "Connects sales, purchasing, inventory, and financial data in one Power BI semantic model, creating a shared foundation for business reporting and analysis.",
+    "tags": ["Power BI", "DAX", "Power Query"],
+    "image": "images/powerbi_semantic.jpg",
+    "imageAlt": "Project illustration for a unified Power BI semantic model",
+    "url": "https://github.com/Kuvelet/Unified_Business_Semantic_Model"
+  },
+  {
+    "title": "Vendor Cost Comparison",
+    "category": "Purchasing analytics",
+    "description": "Consolidates vendor quote histories and calculates landed costs, helping purchasing teams compare suppliers using consistent, up-to-date pricing information.",
+    "tags": ["SQL Server", "MS Access"],
+    "image": "images/purchasing_optimization_sql.png",
+    "imageAlt": "Project illustration for SQL purchasing and vendor cost analysis",
+    "url": "https://github.com/Kuvelet/SQL_Purchasing_Optimization"
+  },
+  {
+    "title": "SKU Demand Forecasting",
+    "category": "Predictive analytics",
+    "description": "Builds and compares monthly demand forecasts for 12,000+ automotive parts using ARIMA and Prophet, supporting procurement and inventory planning.",
+    "tags": ["Python", "ARIMA", "Prophet"],
+    "image": "images/Forecast_Python_ARIMA_Prophet.png",
+    "imageAlt": "Project illustration for automotive parts demand forecasting with Python",
+    "url": "https://github.com/Kuvelet/Forecast_Python_ARIMA_Prophet_ChassisParts"
+  },
+  {
+    "title": "Inventory Reconciliation",
+    "category": "Operations analytics",
+    "description": "Reconciles accounting and warehouse inventory records to identify discrepancies and analyze their financial impact.",
+    "tags": ["MS Access", "Inventory analysis"],
+    "image": "images/reconciliation.png",
+    "imageAlt": "Project illustration for inventory reconciliation and financial analysis",
+    "url": "https://github.com/Kuvelet/MSAccess_Inv_Reconciliation"
+  },
+  {
+    "title": "Sales & Market Benchmarking",
+    "category": "Market analytics",
+    "description": "Benchmarks internal parts sales against regional market demand to reveal performance gaps, catalog coverage, and potential growth opportunities.",
+    "tags": ["SQL Server", "Market analysis"],
+    "image": "images/regional_sales_benchmarking.png",
+    "imageAlt": "Project illustration for regional automotive sales benchmarking",
+    "url": "https://github.com/Kuvelet/SQL_Benchmark_ChassisSales"
+  },
+  {
+    "title": "Pricing & Margin Analysis",
+    "category": "Pricing analytics",
+    "description": "Combines regression analysis and competitor benchmarking to inform wholesale pricing across thousands of SKUs while considering profit margins.",
+    "tags": ["Regression", "Competitor analysis"],
+    "image": "images/smart_pricing.jpeg",
+    "imageAlt": "Project illustration for automotive parts pricing analysis",
+    "url": "https://github.com/Kuvelet/Pricing_ChassisParts"
+  },
+  {
+    "title": "Inventory Devaluation",
+    "category": "Financial analytics",
+    "description": "Quantifies the impact of price reductions on customer inventory and compares the resulting devaluation with company sales data.",
+    "tags": ["Power Query", "M"],
+    "image": "images/inv_dev_m.webp",
+    "imageAlt": "Project illustration for inventory devaluation analysis",
+    "url": "https://github.com/Kuvelet/M_Language_Inv_DeValuation"
+  },
+  {
+    "title": "Parts Cross-Reference System",
+    "category": "Data engineering",
+    "description": "Restructures part-number cross-references into a consistent master dataset to support quote requests, lookups, and ongoing catalog maintenance.",
+    "tags": ["SQL Server", "Data transformation"],
+    "image": "images/sql_cross_master.png",
+    "imageAlt": "Project illustration for a master automotive part-number cross-reference system",
+    "url": "https://github.com/Kuvelet/SQL_Auto_Master_Cross"
+  }
+]
