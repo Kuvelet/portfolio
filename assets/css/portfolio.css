@@ -15,7 +15,7 @@ h1{font-size:27px;font-weight:600;letter-spacing:-1px;margin:0 0 12px;line-heigh
 .specialties{font-size:15px;line-height:1.6;letter-spacing:.1px;color:var(--accent);font-weight:500;margin:0 0 26px}
 .bio{font-size:14px;line-height:1.8;color:var(--muted)}
 .bio p{margin:0 0 16px}
-.contact-link{display:inline-flex;gap:22px;align-items:center;margin-top:12px;font-size:13px;font-weight:600;padding:12px 0;border-bottom:1px solid var(--accent);color:var(--accent)}
+.contact-link{display:inline-flex;gap:22px;align-items:center;margin-top:12px;font-size:13px;font-weight:600;padding:12px 0 4px;border-bottom:1px solid var(--accent);color:var(--accent)}
 .contact-link:hover{color:var(--ink)}
 .social-links{margin-top:auto;display:flex;gap:19px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:22px}
 .social-links a{font-size:12px;line-height:24px;color:var(--muted)}
