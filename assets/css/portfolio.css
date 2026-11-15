@@ -1,5 +1,5 @@
 /* Top profile layout shared by desktop and mobile. */
-:root{color-scheme:light;--paper:#fdfcf9;--sidebar:#f1f1eb;--ink:#25352f;--muted:#606962;--line:#dedfd6;--accent:#315e4c;--tag:#eeeee7;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);font-synthesis:none}
+:root{color-scheme:light;--paper:#ffffff;--sidebar:#ffffff;--ink:#25352f;--muted:#606962;--line:#dedfd6;--accent:#315e4c;--tag:#eeeee7;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);font-synthesis:none}
 *{box-sizing:border-box}
 body{margin:0;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
@@ -23,7 +23,7 @@ main{min-width:0;padding:44px clamp(28px,4.1vw,76px) 28px}
 .project-count{white-space:nowrap}
 .work-heading{padding:26px 0 30px}
 .section-label h2{font:inherit;letter-spacing:inherit;margin:0}
-.work-heading>p{font-size:14px;line-height:1.7;color:var(--muted);margin:0;max-width:440px}
+.work-heading>p{font-size:14px;line-height:1.7;color:var(--muted);margin:0;max-width:none}
 .project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:46px 28px}
 .project{min-width:0;display:flex;flex-direction:column}
 .project-link{display:flex;flex-direction:column;height:100%;border-radius:8px}
