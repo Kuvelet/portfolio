@@ -1,5 +1,14 @@
 [
   {
+    "title": "SMP Intelligence",
+    "category": "Applied AI and business systems",
+    "description": "A working Windows prototype that lets users find matching automotive parts and vehicle applications by asking questions. Combines AI with SQL validation and inspectable results.",
+    "tags": ["C# / .NET", "SQL Server", "Applied AI"],
+    "image": "images/smp-intelligence-preview.png",
+    "imageAlt": "SMP Intelligence desktop interface showing a parts lookup with fictional sample records",
+    "url": "https://github.com/Kuvelet/SMP-Intelligence"
+  },
+  {
     "title": "Automated Parts Catalog",
     "category": "Data engineering",
     "description": "Combines vehicle fitment and cross-reference data into a structured aftermarket catalog, with repeatable SQL workflows for Buyers Guide and Master Cross outputs.",
