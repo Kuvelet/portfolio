@@ -11,9 +11,9 @@
     "walkthroughUrl": "https://kuvelet.github.io/portfolio/walkthrough/"
   },
   {
-    "title": "SisterTwin Vehicles",
+    "title": "Automotive Application Coverage Tool",
     "category": "Catalog automation and analysis",
-    "description": "Built from team needs to find automotive catalog coverage gaps. The initial phase supported 60,000 imported application lines after cleanup and validation; the current tool produces reviewable candidates.",
+    "description": "A desktop application that identifies where parts cataloged for one vehicle may also apply to a related vehicle but are missing from its catalog coverage. It validates vehicle identities against VCdb and produces reports supporting review and preparation of import files. The initial phase resulted in 62k additional application lines imported after cleanup and validation.",
     "tags": ["SQL Server", "Python", "C# / .NET"],
     "image": "images/sistertwin-live.gif?v=real-run-20261117",
     "poster": "images/sistertwin-live.png?v=real-run-20261117",
