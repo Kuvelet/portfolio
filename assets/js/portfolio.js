@@ -32,7 +32,9 @@ async function renderProjects() {
       imageWrap.className = 'project-image-wrap';
       const image = document.createElement('img');
       image.className = 'project-image';
-      image.src = project.image;
+      const motionPreference = project.poster ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
+      let previewPlaying = !motionPreference?.matches;
+      image.src = project.poster && !previewPlaying ? project.poster : project.image;
       image.alt = project.imageAlt || '';
       image.width = 800;
       image.height = 500;
@@ -55,18 +57,39 @@ async function renderProjects() {
       bottom.append(tags, textElement('span', 'project-action', project.demoUrl ? 'View code ↗' : 'View project'));
       link.append(imageWrap, meta, heading, textElement('p', 'project-description', project.description), bottom);
       article.append(link);
-      if (project.demoUrl) {
-        const demoUrl = new URL(project.demoUrl);
-        if (demoUrl.protocol !== 'https:') throw new Error('Demo URLs must use HTTPS.');
-        // A sibling anchor keeps the card link valid and gives keyboard users two destinations.
-        const demo = textElement('a', 'project-demo', 'Live demo ↗');
-        demo.href = demoUrl.href;
-        demo.target = '_blank';
-        demo.rel = 'noopener noreferrer';
-        demo.setAttribute('aria-label', `${project.title} — try the live demo (opens in a new tab)`);
-        const hint = textElement('span', 'project-demo-hint', 'No installation · Fictional data');
+      if (project.demoUrl || project.poster) {
         const actions = textElement('div', 'project-demo-row', '');
-        actions.append(demo, hint);
+        if (project.demoUrl) {
+          const demoUrl = new URL(project.demoUrl);
+          if (demoUrl.protocol !== 'https:') throw new Error('Demo URLs must use HTTPS.');
+          // A sibling anchor keeps the card link valid and gives keyboard users two destinations.
+          const demo = textElement('a', 'project-demo', 'Live demo ↗');
+          demo.href = demoUrl.href;
+          demo.target = '_blank';
+          demo.rel = 'noopener noreferrer';
+          demo.setAttribute('aria-label', `${project.title} — try the live demo (opens in a new tab)`);
+          const hint = textElement('span', 'project-demo-hint', 'No installation · Fictional data');
+          actions.append(demo, hint);
+        }
+        if (project.poster) {
+          const motionButton = textElement('button', 'project-motion', '');
+          motionButton.type = 'button';
+          const updatePreview = () => {
+            image.src = previewPlaying ? project.image : project.poster;
+            motionButton.textContent = previewPlaying ? 'Pause preview' : 'Play preview';
+            motionButton.setAttribute('aria-label', `${previewPlaying ? 'Pause' : 'Play'} ${project.title} animated preview`);
+          };
+          motionButton.addEventListener('click', () => {
+            previewPlaying = !previewPlaying;
+            updatePreview();
+          });
+          motionPreference.addEventListener('change', event => {
+            previewPlaying = !event.matches;
+            updatePreview();
+          });
+          updatePreview();
+          actions.append(motionButton);
+        }
         article.append(actions);
       }
       cards.append(article);
