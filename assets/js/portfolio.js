@@ -54,7 +54,7 @@ async function renderProjects() {
       tags.className = 'tags';
       tags.setAttribute('aria-label', 'Technologies');
       project.tags.forEach(tag => tags.append(textElement('li', '', tag)));
-      bottom.append(tags, textElement('span', 'project-action', project.demoUrl ? 'View code ↗' : 'View project'));
+      bottom.append(tags, textElement('span', 'project-action', (project.demoUrl || project.walkthroughUrl) ? 'View code ↗' : 'View project'));
       link.append(imageWrap, meta, heading, textElement('p', 'project-description', project.description), bottom);
       article.append(link);
       if (project.demoUrl || project.poster) {
