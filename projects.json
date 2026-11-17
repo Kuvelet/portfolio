@@ -15,8 +15,9 @@
     "category": "Catalog automation and analysis",
     "description": "Built from team needs to find automotive catalog coverage gaps. The initial phase supported 60,000 imported application lines after cleanup and validation; the current tool produces reviewable candidates.",
     "tags": ["SQL Server", "Python", "C# / .NET"],
-    "image": "images/sistertwin-desktop.png",
-    "imageAlt": "Actual SisterTwin Windows interface rendered offline with fictional related-vehicle pairs",
+    "image": "images/sistertwin-live.gif?v=real-run-20261117",
+    "poster": "images/sistertwin-live.png?v=real-run-20261117",
+    "imageAlt": "Actual SisterTwin Windows app generating a real report: vehicle list, live processing, completion and resulting Excel reports. Waiting time shortened; no simulation.",
     "url": "https://github.com/Kuvelet/SisterTwin-Vehicles"
   },
   {

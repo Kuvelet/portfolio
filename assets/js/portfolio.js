@@ -9,7 +9,7 @@ async function renderProjects() {
     return element;
   };
   try {
-    const response = await fetch('projects.json?v=sistertwin-20261117', { cache: 'no-cache' });
+    const response = await fetch('projects.json?v=sistertwin-live-20261117', { cache: 'no-cache' });
     if (!response.ok) throw new Error('Project collection could not be loaded.');
     const projects = await response.json();
     if (!Array.isArray(projects) || projects.length === 0) throw new Error('Project collection is empty.');
@@ -32,7 +32,10 @@ async function renderProjects() {
       imageWrap.className = 'project-image-wrap';
       const image = document.createElement('img');
       image.className = 'project-image';
-      image.src = project.image;
+      const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
+      const updateImage = () => { image.src = motionPreference.matches && project.poster ? project.poster : project.image; };
+      updateImage();
+      motionPreference.addEventListener("change", updateImage);
       image.alt = project.imageAlt || '';
       image.width = 800;
       image.height = 500;
