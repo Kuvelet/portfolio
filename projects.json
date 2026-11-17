@@ -4,9 +4,9 @@
     "category": "Applied AI and business systems",
     "description": "An automotive catalog lookup prototype with SQL validation and inspectable results. Try the browser demo with fictional records, or explore the C# source and automated tests.",
     "tags": ["C# / .NET", "SQL Server", "Applied AI"],
-    "image": "images/smp-intelligence-cover.gif",
-    "poster": "images/smp-intelligence-cover.png",
-    "imageAlt": "SMP Intelligence guided browser sample showing a parts lookup and vehicle follow-up with fictional records",
+    "image": "images/smp-intelligence-cover.gif?v=desktop-2",
+    "poster": "images/smp-intelligence-cover.png?v=desktop-2",
+    "imageAlt": "Original Windows interface with neutral Catalog Intelligence branding, showing an OE cross-reference lookup and vehicle applications with fictional records and blurred part numbers",
     "url": "https://github.com/Kuvelet/SMP-Intelligence",
     "demoUrl": "https://kuvelet.github.io/SMP-Intelligence/"
   },
