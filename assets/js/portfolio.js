@@ -52,9 +52,23 @@ async function renderProjects() {
       tags.className = 'tags';
       tags.setAttribute('aria-label', 'Technologies');
       project.tags.forEach(tag => tags.append(textElement('li', '', tag)));
-      bottom.append(tags, textElement('span', 'project-action', 'View project'));
+      bottom.append(tags, textElement('span', 'project-action', project.demoUrl ? 'View code ↗' : 'View project'));
       link.append(imageWrap, meta, heading, textElement('p', 'project-description', project.description), bottom);
       article.append(link);
+      if (project.demoUrl) {
+        const demoUrl = new URL(project.demoUrl);
+        if (demoUrl.protocol !== 'https:') throw new Error('Demo URLs must use HTTPS.');
+        // A sibling anchor keeps the card link valid and gives keyboard users two destinations.
+        const demo = textElement('a', 'project-demo', 'Live demo ↗');
+        demo.href = demoUrl.href;
+        demo.target = '_blank';
+        demo.rel = 'noopener noreferrer';
+        demo.setAttribute('aria-label', `${project.title} — try the live demo (opens in a new tab)`);
+        const hint = textElement('span', 'project-demo-hint', 'No installation · Fictional data');
+        const actions = textElement('div', 'project-demo-row', '');
+        actions.append(demo, hint);
+        article.append(actions);
+      }
       cards.append(article);
     });
     grid.replaceChildren(cards);
