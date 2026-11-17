@@ -9,7 +9,7 @@ async function renderProjects() {
     return element;
   };
   try {
-    const response = await fetch('projects.json?v=coverage-62k-20261117', { cache: 'no-cache' });
+    const response = await fetch('projects.json?v=vehicle-coverage-62k-20261117', { cache: 'no-cache' });
     if (!response.ok) throw new Error('Project collection could not be loaded.');
     const projects = await response.json();
     if (!Array.isArray(projects) || projects.length === 0) throw new Error('Project collection is empty.');
