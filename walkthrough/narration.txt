@@ -1,0 +1,47 @@
+SMP Intelligence — two-minute technical walkthrough
+Captioned edition; optional narration script
+
+00:00:00–00:00:05 | SMP Intelligence
+I built SMP Intelligence to make automotive catalog lookups easier to explore without writing SQL.
+
+00:00:05–00:00:14 | 01 · Ask a catalog question
+Here is the working Windows prototype. I ask which parts cross to an original-equipment reference.
+
+00:00:14–00:00:20 | 01 · Explore the matching parts
+SQL Server returns matching parts, which the application presents in the conversation and results table.
+
+00:00:20–00:00:28 | 01 · Follow up about vehicle fitment
+A follow-up retrieves their vehicle applications. Part numbers, usernames, and regional vehicle counts are blurred in this walkthrough.
+
+00:00:28–00:00:37 | 02 · Inspect the model’s proposed SQL
+The SQL tab exposes the query proposed by the model. The backend checks and normalizes that proposal before executing it.
+
+00:00:37–00:00:45 | 02 · Separate planning from database results
+OpenAI proposes the query. SQL Server supplies the result records, which are formatted locally and are not sent back to the model.
+
+00:00:45–00:00:54 | 03 · Validate the proposed query
+The public validator is adapted from the prototype. It parses SQL into a syntax tree and requires one SELECT statement per result.
+
+00:00:54–00:01:04 | 03 · Restrict the query’s scope
+Table references, syntax, and functions have explicit limits. Unsupported operations are rejected rather than passed through.
+
+00:01:04–00:01:14 | 04 · Validate the whole plan before execution
+Execution order matters. The pipeline materializes the entire validated plan before the first database call.
+
+00:01:14–00:01:23 | 04 · A rejected query stops the entire plan
+If a second query is rejected, the first query must not run either. The sample preserves this behavior from the original prototype.
+
+00:01:23–00:01:33 | 05 · Test the execution boundary
+This public test supplies a rejected second query and checks that the executor was called zero times.
+
+00:01:33–00:01:41 | 05 · Verify behavior with automated tests
+All 105 public cases passed in this run. These tests check defined behaviors; model-generated answers still need separate business-correctness evaluation.
+
+00:01:41–00:01:53 | 06 · Know what the public sample demonstrates
+The original uses OpenAI, SQL Server, and WPF. The public sample uses an offline planner and fictional SQLite data so reviewers can run and inspect it without company access.
+
+00:01:53–00:02:00 | Explore the implementation
+Explore the source, run the tests, or try the browser demo. SMP Intelligence remains a working prototype.
+
+Source: https://github.com/Kuvelet/SMP-Intelligence
+Public demo: https://kuvelet.github.io/SMP-Intelligence/

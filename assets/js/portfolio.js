@@ -92,6 +92,14 @@ async function renderProjects() {
         }
         article.append(actions);
       }
+      if (project.walkthroughUrl) {
+        const walkthroughUrl = new URL(project.walkthroughUrl);
+        if (walkthroughUrl.protocol !== 'https:') throw new Error('Walkthrough URLs must use HTTPS.');
+        const walkthrough = textElement('a', 'project-walkthrough', 'Watch the 2-minute walkthrough ↗');
+        walkthrough.href = walkthroughUrl.href;
+        walkthrough.setAttribute('aria-label', `${project.title} — watch the two-minute technical walkthrough`);
+        article.append(walkthrough);
+      }
       cards.append(article);
     });
     grid.replaceChildren(cards);

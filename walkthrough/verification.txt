@@ -1,0 +1,9 @@
+Public sample test verification
+Date: November 17, 2026
+Command: dotnet test SmpSample.slnx --no-restore
+Runtime: .NET 10
+Passed: 105
+Failed: 0
+Skipped: 0
+
+The original app recording uses live responses. Public source excerpts are read directly from the repository. Query validity does not establish business correctness.

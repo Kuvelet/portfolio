@@ -8,7 +8,8 @@
     "poster": "images/smp-intelligence-cover.png?v=live-recording-4",
     "imageAlt": "Live recording of the SMP Intelligence Windows prototype: an OE lookup, matching parts, and a vehicle applications follow-up, with company part numbers and vehicle counts blurred",
     "url": "https://github.com/Kuvelet/SMP-Intelligence",
-    "demoUrl": "https://kuvelet.github.io/SMP-Intelligence/"
+    "demoUrl": "https://kuvelet.github.io/SMP-Intelligence/",
+    "walkthroughUrl": "https://kuvelet.github.io/portfolio/walkthrough/"
   },
   {
     "title": "Automated Parts Catalog",

@@ -1,0 +1,43 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:05.000
+A conversational way to explore automotive catalog data without writing SQL.
+
+00:00:05.000 --> 00:00:14.000
+The real Windows prototype turns an OE-reference question into a catalog lookup.
+
+00:00:14.000 --> 00:00:20.000
+SQL Server returns the records. The interface exposes both a conversation and a results table.
+
+00:00:20.000 --> 00:00:28.133
+The follow-up returns vehicle applications. Part numbers, usernames, and vehicle-count values are blurred.
+
+00:00:28.133 --> 00:00:37.000
+The SQL view makes the proposal inspectable. The backend checks and normalizes it before execution.
+
+00:00:37.000 --> 00:00:45.000
+OpenAI proposes the query. SQL Server supplies the rows, which are formatted locally.
+
+00:00:45.000 --> 00:00:54.000
+The public validator is adapted from the prototype. It checks parsed SQL syntax, rather than trusting the model.
+
+00:00:54.000 --> 00:01:04.000
+Table references, syntax, and functions have explicit limits. Unsupported operations are rejected.
+
+00:01:04.000 --> 00:01:14.000
+ToArray completes validation for the whole plan before the executor is called.
+
+00:01:14.000 --> 00:01:23.000
+If a later query is rejected, earlier queries in the same plan must not run either.
+
+00:01:23.000 --> 00:01:33.000
+This public test supplies a rejected second query, then asserts that the executor was called zero times.
+
+00:01:33.000 --> 00:01:41.000
+All 105 public test cases passed in this run. Passing tests does not prove every AI-generated answer is correct.
+
+00:01:41.000 --> 00:01:53.000
+The public sample is runnable without company access. Its planner is offline and all catalog records are fictional.
+
+00:01:53.000 --> 00:02:00.000
+Working prototype · Public source and tests · Browser demo with fictional data
