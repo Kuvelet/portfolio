@@ -11,6 +11,15 @@
     "walkthroughUrl": "https://kuvelet.github.io/portfolio/walkthrough/"
   },
   {
+    "title": "SisterTwin Vehicles",
+    "category": "Catalog automation and analysis",
+    "description": "Built from team needs to find automotive catalog coverage gaps. The initial phase supported 60,000 imported application lines after cleanup and validation; the current tool produces reviewable candidates.",
+    "tags": ["SQL Server", "Python", "C# / .NET"],
+    "image": "images/sistertwin-desktop.png",
+    "imageAlt": "Actual SisterTwin Windows interface rendered offline with fictional related-vehicle pairs",
+    "url": "https://github.com/Kuvelet/SisterTwin-Vehicles"
+  },
+  {
     "title": "Automated Parts Catalog",
     "category": "Data engineering",
     "description": "Combines vehicle fitment and cross-reference data into a structured aftermarket catalog, with repeatable SQL workflows for Buyers Guide and Master Cross outputs.",

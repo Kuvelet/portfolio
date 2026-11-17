@@ -2,7 +2,7 @@
 
 Live website: https://kuvelet.github.io/portfolio/
 
-A static portfolio hosted on GitHub Pages. The current design places the profile and introduction above the project gallery on both desktop and mobile. SMP Intelligence leads the gallery, followed by the nine existing projects. No framework, dependency installation, or build command is required.
+A static portfolio hosted on GitHub Pages. The current design places the profile and introduction above the project gallery on both desktop and mobile. SMP Intelligence leads the gallery, followed by SisterTwin Vehicles and the nine existing projects. No framework, dependency installation, or build command is required.
 
 ## Add a project
 
