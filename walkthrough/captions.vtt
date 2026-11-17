@@ -1,43 +1,79 @@
 WEBVTT
 
-00:00:00.000 --> 00:00:05.000
-A conversational way to explore automotive catalog data without writing SQL.
+00:00:00.180 --> 00:00:04.351
+SMP Intelligence makes catalog lookups conversational.
 
-00:00:05.000 --> 00:00:14.000
-The real Windows prototype turns an OE-reference question into a catalog lookup.
+00:00:05.180 --> 00:00:07.185
+Here's the real Windows prototype.
 
-00:00:14.000 --> 00:00:20.000
-SQL Server returns the records. The interface exposes both a conversation and a results table.
+00:00:07.185 --> 00:00:11.194
+I ask which parts cross to an original equipment number.
 
-00:00:20.000 --> 00:00:28.133
-The follow-up returns vehicle applications. Part numbers, usernames, and vehicle-count values are blurred.
+00:00:14.180 --> 00:00:18.177
+The matching parts appear in a conversation and a results table.
 
-00:00:28.133 --> 00:00:37.000
-The SQL view makes the proposal inspectable. The backend checks and normalizes it before execution.
+00:00:20.180 --> 00:00:23.057
+Then I ask which vehicles they fit.
 
-00:00:37.000 --> 00:00:45.000
-OpenAI proposes the query. SQL Server supplies the rows, which are formatted locally.
+00:00:23.057 --> 00:00:26.345
+Part numbers, usernames, and vehicle counts are blurred.
 
-00:00:45.000 --> 00:00:54.000
-The public validator is adapted from the prototype. It checks parsed SQL syntax, rather than trusting the model.
+00:00:28.313 --> 00:00:32.308
+The SQL tab shows the query proposed by the model.
 
-00:00:54.000 --> 00:01:04.000
-Table references, syntax, and functions have explicit limits. Unsupported operations are rejected.
+00:00:32.308 --> 00:00:34.705
+The backend checks it before execution.
 
-00:01:04.000 --> 00:01:14.000
-ToArray completes validation for the whole plan before the executor is called.
+00:00:37.180 --> 00:00:38.523
+OpenAI proposes SQL.
 
-00:01:14.000 --> 00:01:23.000
-If a later query is rejected, earlier queries in the same plan must not run either.
+00:00:38.523 --> 00:00:44.792
+The database returns records, which stay local rather than going back to the model.
 
-00:01:23.000 --> 00:01:33.000
-This public test supplies a rejected second query, then asserts that the executor was called zero times.
+00:00:45.180 --> 00:00:48.721
+Here's the public validator, adapted from the prototype.
 
-00:01:33.000 --> 00:01:41.000
-All 105 public test cases passed in this run. Passing tests does not prove every AI-generated answer is correct.
+00:00:48.721 --> 00:00:53.591
+It parses the SQL and requires one SELECT statement per result.
 
-00:01:41.000 --> 00:01:53.000
-The public sample is runnable without company access. Its planner is offline and all catalog records are fictional.
+00:00:54.180 --> 00:00:59.652
+The checks limit which tables, functions, and SQL operations are allowed.
 
-00:01:53.000 --> 00:02:00.000
-Working prototype · Public source and tests · Browser demo with fictional data
+00:00:59.652 --> 00:01:01.642
+Unsupported queries are rejected.
+
+00:01:04.180 --> 00:01:05.504
+The order matters.
+
+00:01:05.504 --> 00:01:10.359
+This pipeline validates the entire plan before making any database calls.
+
+00:01:14.180 --> 00:01:19.877
+So if the second query fails validation, the first query doesn't run either.
+
+00:01:19.877 --> 00:01:21.192
+No partial execution.
+
+00:01:23.180 --> 00:01:25.460
+This test checks exactly that.
+
+00:01:25.460 --> 00:01:32.758
+It supplies an invalid second query, then verifies that the database executor was called zero times.
+
+00:01:33.180 --> 00:01:35.203
+All 105 tests passed.
+
+00:01:35.203 --> 00:01:40.766
+They verify specific behaviors, not the accuracy of every AI answer.
+
+00:01:41.180 --> 00:01:45.347
+The original uses OpenAI, SQL Server, and WPF.
+
+00:01:45.347 --> 00:01:52.118
+The public sample uses an offline planner and fictional data, without company access.
+
+00:01:53.180 --> 00:01:57.332
+Explore the code, run the tests, or try the browser demo.
+
+00:01:57.332 --> 00:01:59.219
+This is a working prototype.
