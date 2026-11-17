@@ -9,7 +9,7 @@ async function renderProjects() {
     return element;
   };
   try {
-    const response = await fetch('projects.json');
+    const response = await fetch('projects.json?v=sistertwin-20261117', { cache: 'no-cache' });
     if (!response.ok) throw new Error('Project collection could not be loaded.');
     const projects = await response.json();
     if (!Array.isArray(projects) || projects.length === 0) throw new Error('Project collection is empty.');
