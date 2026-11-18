@@ -13,7 +13,7 @@
   {
     "title": "Vehicle Application Coverage Tool",
     "category": "Catalog automation and analysis",
-    "description": "A desktop application that identifies where parts cataloged for one vehicle may also apply to a related vehicle but are missing from its catalog coverage. It validates vehicle identities against VCdb and produces reports supporting review and preparation of import files. The initial phase resulted in 62k additional application lines imported after cleanup and validation.",
+    "description": "A desktop application that identifies where parts cataloged for one vehicle may also apply to a related vehicle but are missing from its catalog coverage. It validates vehicle identities against VCdb and produces reports supporting review and preparation of import files.",
     "tags": ["SQL Server", "Python", "C# / .NET"],
     "image": "images/sistertwin-live.gif?v=real-run-20261117",
     "poster": "images/sistertwin-live.png?v=real-run-20261117",
