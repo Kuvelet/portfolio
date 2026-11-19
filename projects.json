@@ -22,11 +22,11 @@
   },
   {
     "title": "ACES Differential Automation",
-    "category": "Workflow automation",
-    "description": "Turns recurring automotive catalog comparisons into organized report archives and traceable SQL history, with automated PIM submission, safe retries, and duplicate prevention.",
+    "category": "Web automation and data engineering",
+    "description": "Combines web automation and data engineering to submit ACES catalog comparisons through PIM, collect completed reports, and deliver analysis-ready data in SQL Server.",
     "tags": ["Python", "SQL Server", "Playwright"],
-    "image": "images/aces-differential-workflow.png",
-    "imageAlt": "Workflow illustration showing export pairing, PIM comparison submission, report collection, and an eight-table SQL import",
+    "image": "images/aces-differential-workflow.png?v=pipeline-cover-2",
+    "imageAlt": "Pipeline illustration with large icons for catalog exports, the automated PIM website, report files, and SQL Server",
     "url": "https://github.com/Kuvelet/ACES-Differential-Automation"
   },
   {
