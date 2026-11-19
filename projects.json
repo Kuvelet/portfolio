@@ -21,6 +21,15 @@
     "url": "https://github.com/Kuvelet/SisterTwin-Vehicles"
   },
   {
+    "title": "ACES Differential Automation",
+    "category": "Workflow automation",
+    "description": "Turns recurring automotive catalog comparisons into organized report archives and traceable SQL history, with automated PIM submission, safe retries, and duplicate prevention.",
+    "tags": ["Python", "SQL Server", "Playwright"],
+    "image": "images/aces-differential-workflow.png",
+    "imageAlt": "Workflow illustration showing export pairing, PIM comparison submission, report collection, and an eight-table SQL import",
+    "url": "https://github.com/Kuvelet/ACES-Differential-Automation"
+  },
+  {
     "title": "Automated Parts Catalog",
     "category": "Data engineering",
     "description": "Combines vehicle fitment and cross-reference data into a structured aftermarket catalog, with repeatable SQL workflows for Buyers Guide and Master Cross outputs.",
