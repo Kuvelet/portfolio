@@ -25,8 +25,9 @@
     "category": "Web automation and data engineering",
     "description": "Combines web automation and data engineering to submit ACES catalog comparisons through PIM, collect completed reports, and deliver analysis-ready data in SQL Server.",
     "tags": ["Python", "SQL Server", "Playwright"],
-    "image": "images/aces-differential-workflow.png?v=pipeline-cover-2",
-    "imageAlt": "Pipeline illustration with large icons for catalog exports, the automated PIM website, report files, and SQL Server",
+    "image": "images/aces-differential-workspace.gif?v=real-workspace-20261119",
+    "poster": "images/aces-differential-workspace.png?v=real-workspace-20261119",
+    "imageAlt": "Animated composition of real screenshots showing SQL import history, archived differential reports, and the PIM submission form. Internal identifiers are redacted; this is not a recording of a new pipeline run.",
     "url": "https://github.com/Kuvelet/ACES-Differential-Automation"
   },
   {
